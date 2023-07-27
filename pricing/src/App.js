@@ -1,9 +1,20 @@
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+  const [toggleClick, setToggleClick] = useState(false);
+  const handleToggle = () => {
+    setToggleClick(!toggleClick);
+    console.log(toggleClick);
+  };
   return (
     <main className="App">
-      Our Pricing Annually Monthly
+      Our Pricing Annually
+      <label className="switch">
+        <input type="checkbox" onClick={() => handleToggle()} />
+        <span className="slider round"></span>
+      </label>
+      Monthly
       <div className="cardHolder">
         <div className="card">
           Basic <h1>$19.99</h1> <h1>$199.99</h1> <span>500 GB Storage</span>
@@ -24,11 +35,8 @@ function App() {
         </div>
       </div>
       <div class="attribution">
-        Challenge by{' '}
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-          Frontend Mentor
-        </a>
-        . Coded by <a href="#">Ryan Paulson</a>.
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+        Coded by <a href="www.ryanpdesigns.com">Ryan Paulson</a>.
       </div>
     </main>
   );
