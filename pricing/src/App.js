@@ -5,7 +5,6 @@ function App() {
   const [toggleClick, setToggleClick] = useState(false);
   const handleToggle = () => {
     setToggleClick(!toggleClick);
-    console.log(toggleClick);
   };
   return (
     <main className="App">
@@ -45,7 +44,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div class="attribution">
+      <div className="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
         Coded by <a href="www.ryanpdesigns.com">Ryan Paulson</a>.
       </div>
