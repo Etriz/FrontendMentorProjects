@@ -1,5 +1,8 @@
+
 .App {
   text-align: center;
+  color: hsl(232, 13%, 33%);
+  font-weight: 700;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -108,7 +111,6 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid hsl(237, 63%, 64%);
   border-radius: 1rem;
   width: 33%;
   margin:1rem 0;
@@ -124,15 +126,18 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: column;
   width: 80%;
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 .cardInner span{
   padding: 20px 0;
   text-align: center;
-  border-top: 1px solid blue;
+  border-top: 1px solid hsl(234, 14%, 74%);
 }
 .cardInner span:last-of-type{
-  border-bottom: 1px solid blue;
+  border-bottom: 1px solid hsl(234, 14%, 74%);
+}
+.cardInner h1{
+  font-size: 3rem;
 }
 .mid span{
   border-top: 1px solid white;
@@ -164,4 +169,14 @@ button:hover{
 .mid button:hover{
   color:white;
   border:1px solid white;
+}
+@media screen and (max-width:380px){
+  .cardHolder{
+    flex-direction: column;
+    margin: 1rem auto;
+    max-width: 85vw;
+  }
+  .card{
+    width:100%;
+  }
 }
