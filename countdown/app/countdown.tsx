@@ -25,21 +25,29 @@ const countdown = () => {
 
   return (
     <div className=" mx-auto flex flex-row justify-around text-center">
-      <div className="mx-8 flex flex-col">
-        <div className="p-2 border border-white">{countdownDisplay.days}</div>
-        <div>Days</div>
+      <div className="mx-8 flex flex-col w-32">
+        <div className="mb-4 rounded-xl h-32 flex justify-center items-center text-6xl text-[--soft-red] bg-[--dark-desaturated-blue]">
+          {countdownDisplay.days}
+        </div>
+        <div className="text-[--grayish-blue]">Days</div>
       </div>
-      <div className="mx-8 flex flex-col">
-        <div className="p-2 border border-white">{countdownDisplay.hours}</div>
-        <div>Hours</div>
+      <div className="mx-8 flex flex-col w-32">
+        <div className="mb-4 rounded-xl h-32 flex justify-center items-center text-6xl text-[--soft-red]  bg-[--dark-desaturated-blue]">
+          {countdownDisplay.hours}
+        </div>
+        <div className="text-[--grayish-blue]">Hours</div>
       </div>
-      <div className="mx-8 flex flex-col">
-        <div className="p-2 border border-white">{countdownDisplay.minutes}</div>
-        <div>Minutes</div>
+      <div className="mx-8 flex flex-col w-32">
+        <div className="mb-4 rounded-xl h-32 flex justify-center items-center text-6xl text-[--soft-red]  bg-[--dark-desaturated-blue]">
+          {countdownDisplay.minutes}
+        </div>
+        <div className="text-[--grayish-blue]">Minutes</div>
       </div>
-      <div className="mx-8 flex flex-col">
-        <div className="p-2 border border-white">{countdownDisplay.seconds}</div>
-        <div>Seconds</div>
+      <div className="mx-8 flex flex-col w-32">
+        <div className="mb-4 rounded-xl h-32 flex justify-center items-center text-6xl text-[--soft-red]  bg-[--dark-desaturated-blue]">
+          {countdownDisplay.seconds}
+        </div>
+        <div className="text-[--grayish-blue]">Seconds</div>
       </div>
     </div>
   );
