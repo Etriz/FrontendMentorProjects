@@ -2,22 +2,48 @@
   margin-top: 2rem;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-around;
+  align-items: left;
 }
 .logo {
-  margin-left: 3rem;
+  margin-left: 1rem;
 }
 .linkBar {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
   justify-content: space-around;
   align-items: center;
-  width: 50%;
+  width: 80vw;
   backdrop-filter: blur(5rem);
   color: white;
-  padding: 2rem;
 }
 .linkBar a {
   text-transform: uppercase;
+}
+
+@media (width>375px) {
+  .nav {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    margin-left: 3rem;
+  }
+  .linkBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    backdrop-filter: blur(5rem);
+    color: white;
+    padding: 2rem;
+  }
+  .linkBar a:hover {
+    color: red;
+  }
 }

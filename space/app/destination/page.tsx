@@ -1,5 +1,6 @@
 import React from 'react';
-import Nav from '../components/nav';
+import data from '../../design/data.json';
+import styles from './page.module.css';
 
 const Destination = () => {
   return <div>This is the destination page</div>;
